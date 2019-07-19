@@ -2,82 +2,82 @@ NAME=input("enter your name please :")
 grade={}
 for key in range(0,1):
     x=(input("Grade of your 'PROGRAMMING INTERNET OF THINGS':"))
-    if(x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if(x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
         print("sorry")
     else:
         grade.update({'PROGRAMMING INTERNET OF THINGS':x})
     x=(input("Grade of your 'BUILD YOUR OWN COMPUTER':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
             print("sorry") 
     else:
         grade.update({'BUILD YOUR OWN COMPUTER':x})
     x=(input("Grade of your 'DIFFERENTIAL EQUATIONS':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
         print("sorry")
     else:
         grade.update({'DIFFERENTIAL EQUATIONS':x})
     x=(input("Grade of your 'ELECTRONICS & ITS APPLICATIONS':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
         print("sorry")
     else:
         grade.update({'ELECTRONICS & ITS APPLICATIONS':x})
     x=(input("Grade of your 'IELTS-1':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
         print("sorry")
     else:
         grade.update({'IELTS-1':x})
     x=(input("Grade of your 'APPLIED ANALYTICAL CHEMISTRY':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
         print("sorry")
     else:
         grade.update({'APPLIED ANALYTICAL CHEMISTRY':x})
     x=(input("Grade of your 'APPLIED ENGINEERING MATERIALS':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
         print("sorry")
     else:
         grade.update({'APPLIED ENGINEERING MATERIALS':x})
     x=(input("Grade of your 'ECONOMICS':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f' and x!='s'):
         print("sorry")
     else:
         grade.update({'ECONOMICS':x})
     x=(input("Grade of your 'LIFE SKILLS DEVELOPMENT-II':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'and x!='s'):
         print("sorry")
     else:
         grade.update({'LIFE SKILLS DEVELOPMENT-II':x})
     x=(input("Grade of your 'BASIC MECHANICS & PROPERTIES OF MATTER':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'and x!='s'):
         print("sorry")
     else:
         grade.update({'BASIC MECHANICS & PROPERTIES OF MATTER':x})
     x=(input("Grade of your 'ENVIRONMENTAL SCIENCE':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'and x!='s'):
         print("sorry")
     else:
         grade.update({'ENVIRONMENTAL SCIENCE':x})
     x=(input("Grade of your 'ELECTRICAL WORKSHOP PRACTICE':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'and x!='s'):
         print("sorry")
     else:
         grade.update({'ELECTRICAL WORKSHOP PRACTICE':x})
     x=(input("Grade of your 'WORKSHOP PRACTICE':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'and x!='s'):
         print("sorry")
     else:
         grade.update({'WORKSHOP PRACTICE':x})
     x=(input("Grade of your 'GEOMETRIC MODELLING LAB':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'and x!='s'):
         print("sorry")
     else:
         grade.update({'GEOMETRIC MODELLING LAB':x})
     x=(input("Grade of your 'BASIC SURVEYING':"))
-    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'):
+    if (x!='a'and x!='b'and x!='c'and x!='d'and x!='e'and x!='o'and x!='f'and x!='s'):
         print("sorry")
     else:
         grade.update({'BASIC SURVEYING':x})
 print(grade)
-points={'o':10,'e':9,'a':8,'b':7,'c':6,'d':5,'f':0}
+points={'o':10,'e':9,'a':8,'b':7,'c':6,'d':5,'f':0,'s':0}
 credits={'PROGRAMMING INTERNET OF THINGS':2,'BUILD YOUR OWN COMPUTER':2,'DIFFERENTIAL EQUATIONS':3,'ELECTRONICS & ITS APPLICATIONS':3,'IELTS-1':2,'APPLIED ANALYTICAL CHEMISTRY':3,'APPLIED ENGINEERING MATERIALS':3,'ECONOMICS':2,'LIFE SKILLS DEVELOPMENT-II':2,'BASIC MECHANICS & PROPERTIES OF MATTER':4,'ENVIRONMENTAL SCIENCE':2,'ELECTRICAL WORKSHOP PRACTICE':2,'WORKSHOP PRACTICE':2,'GEOMETRIC MODELLING LAB':2,'BASIC SURVEYING':2}
 q=list((grade.keys()))
 w=list((grade.values()))
