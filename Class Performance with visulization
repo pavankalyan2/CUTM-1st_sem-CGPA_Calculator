@@ -1,0 +1,63 @@
+import pandas as pd
+df=pd.read_excel("C:\\Users\\USER\\Desktop\\ooad project\\Results\\1st_sem_cse_2018.xls") # Here add_your downloaded location of that excel.
+df.head()
+qwer={}
+Regd=[]
+for roll in range(180101120001,180101120060):
+    p=df[df.REGD_NO==roll]
+    k=list(p.Grade)
+    v=list(p.SUBJECT_NAME)
+    #print(v)
+    #print(k)
+    grade=dict(zip(v,k))
+    points={'O':10,'E':9,'A':8,'B':7,'C':6,'D':5,'F':0,'S':0,'W':0}
+    credits={'CLOUD COMPUTING APPLICATION':2,'LINEAR ALGEBRA & VECTOR CALCULUS':3,'ELECTRONIC DEVICES':3,'APPLIED ANALYTICAL CHEMISTRY':3,'DIGITAL ELECTRONIC CIRCUITS':4,'APPLIED ENGINEERING MATERIALS':3,'PROGRAMMING FOR PROBLEM SOLVING-JAVA':3,'ECONOMICS':2,'LIFE SKILLS DEVELOPMENT-II':2,'DATA BASE MANAGEMENT SYSTEM':3,'LIFE SKILLS DEVELOPMENT-III':2,'CAREER COMMUNICATION':2,'LIFE SKILLS DEVELOPMENT-I':2,'COMMUNICATIVE PRACTICE LAB-I':2,'BASIC ELECTRICAL ENGINEERING':3,'3D MODELING':2,'OPTICS & OPTICAL FIBRES':4,'BE A CONTRIBUTOR':2,'MANAGEMENT PROCESSES & OB':2,'BASIC FLUID MECHANICS':3,'ELECTRONICS & ITS APPLICATIONS':3,'ENGINEERING MECHANICS':3,'THERMODYNAMICS':3,'BUILD YOUR OWN COMPUTER':2,'PROGRAMMING INTERNET OF THINGS':2}
+    q=list((grade.keys()))
+    w=list((grade.values()))
+    e=list((points.keys()))
+    r=list((points.values()))
+    t=list((credits.values()))
+    u=list((credits.keys()))
+    a=[]
+    b=[]
+    sum=0
+    add=0
+    for y in range(0,len(grade)):
+        for x in range(0,len(credits)):
+            if  (q[y]==u[x]):
+                a.append(t[x])
+                sum=sum+t[x]
+    for y in range(0,len(grade)):
+        for x in range(0,len(points)):
+            if (w[y]==e[x]):
+                b.append(r[x])
+    for x in range(0,len(a)):
+        m=b[x]*a[x]
+        add=add+m
+        CGPA=(add/sum)
+    Regd.append(roll)
+    qwer.update({roll:CGPA})
+cgpa=[x for x in qwer.values()]
+import numpy as np
+import matplotlib.pyplot as plt 
+from matplotlib.pyplot import style
+Regd=[x for x in range(1,60)]
+plt.subplot(111)
+xe=np.linspace(1,10,100)
+plt.plot(df.Name,cgpa)
+plt.xlim(0,59)
+plt.ylim(0,10)
+plt.fill_between(df.Name,cgpa,8,color="orange",alpha=0.2)
+plt.subplots_adjust(top=1,bottom=0.20,left=0,right=2,wspace=0.2,hspace=1)
+plt.xticks(rotation="vertical")
+plt.xlabel("REDG",color="darkred")
+plt.ylabel("POINTS",color="darkred")
+plt.title("1st SEM")
+plt.gca().spines['left'].set_color('b')  
+plt.gca().spines['bottom'].set_color('b')
+plt.gca().spines['top'].set_visible(False)
+plt.gca().spines['right'].set_visible(False)
+plt.gca().spines['left'].set_linewidth(2)
+plt.gca().spines['bottom'].set_linewidth(2)
+plt.grid(True)
+plt.show()
