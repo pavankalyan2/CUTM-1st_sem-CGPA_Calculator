@@ -1,4 +1,7 @@
-pandas==2.2.2
-numpy==1.26.4
-faiss-cpu==1.7.4
-sentence-transformers==2.7.0
+pandas
+numpy
+faiss-cpu
+sentence-transformers
+rank-bm25
+scikit-learn
+tqdm
